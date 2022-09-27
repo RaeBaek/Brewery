@@ -5,6 +5,7 @@
 //  Created by 백래훈 on 2022/09/20.
 //
 
+// 기본 UI 구성하기
 import Foundation
 
 struct Beer: Decodable {

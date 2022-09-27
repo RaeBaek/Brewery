@@ -5,6 +5,7 @@
 //  Created by 백래훈 on 2022/09/27.
 //
 
+// 기본 UI 구성하기
 import UIKit
 
 class BeerDetailViewController: UITableViewController {

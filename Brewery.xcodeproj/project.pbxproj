@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1410DEF928D9D297002C2E7A /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410DEF828D9D297002C2E7A /* BeerListViewController.swift */; };
 		1410DEFC28D9D3B2002C2E7A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1410DEFB28D9D3B2002C2E7A /* SnapKit */; };
-		1410DEFE28D9D3B2002C2E7A /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 1410DEFD28D9D3B2002C2E7A /* SnapKit-Dynamic */; };
 		1410DF0128D9D422002C2E7A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1410DF0028D9D422002C2E7A /* Kingfisher */; };
 		1410DF0328D9D481002C2E7A /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410DF0228D9D481002C2E7A /* Beer.swift */; };
 		1410DF0528D9DCE0002C2E7A /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410DF0428D9DCE0002C2E7A /* BeerListCell.swift */; };
@@ -40,7 +39,6 @@
 			files = (
 				1410DF0128D9D422002C2E7A /* Kingfisher in Frameworks */,
 				1410DEFC28D9D3B2002C2E7A /* SnapKit in Frameworks */,
-				1410DEFE28D9D3B2002C2E7A /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +95,6 @@
 			name = Brewery;
 			packageProductDependencies = (
 				1410DEFB28D9D3B2002C2E7A /* SnapKit */,
-				1410DEFD28D9D3B2002C2E7A /* SnapKit-Dynamic */,
 				1410DF0028D9D422002C2E7A /* Kingfisher */,
 			);
 			productName = Brewery;
@@ -231,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -285,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -307,9 +304,9 @@
 				INFOPLIST_FILE = Brewery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,6 +314,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = RaeHoon.Brewery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -335,9 +335,9 @@
 				INFOPLIST_FILE = Brewery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,6 +345,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = RaeHoon.Brewery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -398,11 +401,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1410DEFA28D9D3B2002C2E7A /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		1410DEFD28D9D3B2002C2E7A /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1410DEFA28D9D3B2002C2E7A /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
 		};
 		1410DF0028D9D422002C2E7A /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
